@@ -1,0 +1,8 @@
+@use "./variables" as v;
+
+/* Hover Effect */
+.metrics-card:hover {
+  background-color: v.$light; /* Light background color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  cursor: pointer;
+}

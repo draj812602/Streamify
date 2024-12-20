@@ -1,0 +1,17 @@
+@use "./variables" as v;
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); // Adds a subtle separator
+
+  a {
+    color: v.$dark !important;
+    font-weight: bold;
+    &:hover {
+      color: v.$info !important;
+    }
+  }
+}
+.nav-link.active {
+  font-weight: bold;
+  color: v.$info !important;
+}

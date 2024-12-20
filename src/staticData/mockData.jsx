@@ -1,0 +1,173 @@
+// mockData.js
+
+export const userGrowthData = [
+  { month: "Jan", totalUsers: 100000, activeUsers: 70000 },
+  { month: "Feb", totalUsers: 120000, activeUsers: 85000 },
+  { month: "Mar", totalUsers: 140000, activeUsers: 95000 },
+  { month: "Apr", totalUsers: 160000, activeUsers: 110000 },
+  { month: "May", totalUsers: 180000, activeUsers: 125000 },
+  { month: "Jun", totalUsers: 200000, activeUsers: 140000 },
+  { month: "Jul", totalUsers: 230000, activeUsers: 160000 },
+  { month: "Aug", totalUsers: 260000, activeUsers: 185000 },
+  { month: "Sep", totalUsers: 300000, activeUsers: 210000 },
+  { month: "Oct", totalUsers: 340000, activeUsers: 250000 },
+  { month: "Nov", totalUsers: 390000, activeUsers: 280000 },
+  { month: "Dec", totalUsers: 450000, activeUsers: 320000 },
+];
+
+export const revenueData = [
+  { source: "Subscriptions", value: 60 },
+  { source: "Advertisements", value: 30 },
+  { source: "Partnerships", value: 10 },
+];
+
+export const topSongs = [
+  { song: "Blinding Lights", streams: 1500000 },
+  { song: "Levitating", streams: 1300000 },
+  { song: "Drivers License", streams: 1200000 },
+  { song: "Save Your Tears", streams: 1150000 },
+  { song: "Peaches", streams: 1000000 },
+];
+
+export const recentStreams = [
+  {
+    songName: "Blinding Lights",
+    artist: "The Weeknd",
+    date: "2024-12-18",
+    streams: 500,
+    userId: "U123",
+  },
+  {
+    songName: "Levitating",
+    artist: "Dua Lipa",
+    date: "2024-12-17",
+    streams: 450,
+    userId: "U124",
+  },
+  {
+    songName: "Drivers License",
+    artist: "Olivia Rodrigo",
+    date: "2024-12-17",
+    streams: 420,
+    userId: "U125",
+  },
+  {
+    songName: "Save Your Tears",
+    artist: "The Weeknd",
+    date: "2024-12-16",
+    streams: 410,
+    userId: "U126",
+  },
+  {
+    songName: "Peaches",
+    artist: "Justin Bieber",
+    date: "2024-12-16",
+    streams: 400,
+    userId: "U127",
+  },
+  {
+    songName: "Good 4 U",
+    artist: "Olivia Rodrigo",
+    date: "2024-12-15",
+    streams: 380,
+    userId: "U128",
+  },
+  {
+    songName: "Shivers",
+    artist: "Ed Sheeran",
+    date: "2024-12-15",
+    streams: 370,
+    userId: "U129",
+  },
+  {
+    songName: "Stay",
+    artist: "The Kid LAROI & Justin Bieber",
+    date: "2024-12-14",
+    streams: 360,
+    userId: "U130",
+  },
+  {
+    songName: "Kesariya",
+    artist: "Arijit Singh",
+    date: "2024-12-14",
+    streams: 350,
+    userId: "U131",
+  },
+  {
+    songName: "Tum Hi Ho",
+    artist: "Arijit Singh",
+    date: "2024-12-13",
+    streams: 340,
+    userId: "U132",
+  },
+  {
+    songName: "Vaaste",
+    artist: "Dhvani Bhanushali",
+    date: "2024-12-13",
+    streams: 330,
+    userId: "U133",
+  },
+  {
+    songName: "Jai Ho",
+    artist: "A.R. Rahman",
+    date: "2024-12-12",
+    streams: 320,
+    userId: "U134",
+  },
+  {
+    songName: "Tera Ban Jaunga",
+    artist: "Akhil Sachdeva",
+    date: "2024-12-12",
+    streams: 310,
+    userId: "U135",
+  },
+  {
+    songName: "Perfect",
+    artist: "Ed Sheeran",
+    date: "2024-12-11",
+    streams: 300,
+    userId: "U136",
+  },
+  {
+    songName: "Naatu Naatu",
+    artist: "Rahul Sipligunj & Kaala Bhairava",
+    date: "2024-12-11",
+    streams: 290,
+    userId: "U137",
+  },
+  {
+    songName: "Bekhayali",
+    artist: "Sachet Tandon",
+    date: "2024-12-10",
+    streams: 280,
+    userId: "U138",
+  },
+  {
+    songName: "Ghungroo",
+    artist: "Arijit Singh",
+    date: "2024-12-10",
+    streams: 270,
+    userId: "U139",
+  },
+  {
+    songName: "Shape of You",
+    artist: "Ed Sheeran",
+    date: "2024-12-09",
+    streams: 260,
+    userId: "U140",
+  },
+  {
+    songName: "Pachtaoge",
+    artist: "Arijit Singh",
+    date: "2024-12-09",
+    streams: 250,
+    userId: "U141",
+  },
+  {
+    songName: "Kalank Title Track",
+    artist: "Arijit Singh",
+    date: "2024-12-08",
+    streams: 240,
+    userId: "U142",
+  },
+];
