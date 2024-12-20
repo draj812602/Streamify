@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/NavBar";
 import DataTable from "../components/tableComp/DataTable";
 import { recentStreams } from "../staticData/mockData";
 import { useGlobalContext } from "../contextApi/GlobalContext";
 import Search from "../components/SearchComponent";
 import useDebounce from "../cuatomHooks/useDebounce";
+import Pagination from "../components/Pagination";
 
 const DataTablePage = () => {
   const { searchTerm } = useGlobalContext(); // Get raw search term
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5; // Number of items per page
   const debouncedSearchTerm = useDebounce(searchTerm, 500); // Debounce the search term
 
   // Filter the data based on the debounced search term
@@ -20,7 +24,12 @@ const DataTablePage = () => {
       row.userId.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
     );
   });
+  // Calculate paginated data
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   return (
     <div>
       <Navbar />
@@ -31,7 +40,12 @@ const DataTablePage = () => {
             <Search />
           </span>
         </div>
-        <DataTable data={filteredData} />
+        <DataTable data={currentItems} />
+        <Pagination
+          totalPages={totalPages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
     </div>
   );

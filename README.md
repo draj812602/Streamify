@@ -1,4 +1,4 @@
-# Dashboard and DataTable Application
+# Music Streaming Analytics Dashboard
 
 ## Overview
 
