@@ -25,8 +25,8 @@ Make sure you have the following installed:
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/draj812602/Streamify.git
+   cd Streamify
    ```
 
 2. **Install Dependencies**:
